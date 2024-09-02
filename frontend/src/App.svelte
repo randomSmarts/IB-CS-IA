@@ -1,10 +1,18 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
-  import Counter from './lib/Counter.svelte'
-  import LandingPage from './components/LandingPage.svelte';
+  // Here you can add logic or state variables if needed
+import LandingPage from "./components/LandingPage.svelte";
 </script>
 
 <main>
-  <LandingPage />
+  <h1>Welcome to the Futuristic Attendance Tracker</h1>
+  <LandingPage /> <!-- Include your LandingPage component here -->
 </main>
+
+<style>
+  main {
+    text-align: center;
+    padding: 1em;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+</style>
