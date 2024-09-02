@@ -1,15 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000428, #004e92); /* Futuristic gradient background */
+    color: #fff;
+}
+
 /* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #1e1e1e, #292929);
-    color: #e0e0e0;
-    overflow: hidden;
 }
 
 h1, h2, p {

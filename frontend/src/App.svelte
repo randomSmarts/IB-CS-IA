@@ -1,18 +1,15 @@
 <script>
-  // Here you can add logic or state variables if needed
-import LandingPage from "./components/LandingPage.svelte";
+  import { Router, Route, Link } from 'svelte-routing';
+  import Home from './routes/Home.svelte';
+  import About from './routes/About.svelte';
 </script>
 
-<main>
-  <h1>Welcome to the Futuristic Attendance Tracker</h1>
-  <LandingPage /> <!-- Include your LandingPage component here -->
-</main>
+<Router>
+  <nav>
+    <Link to="/">Home</Link>
+    <Link to="/about">About</Link>
+  </nav>
 
-<style>
-  main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
-  }
-</style>
+  <Route path="/" component={Home} />
+  <Route path="/about" component={About} />
+</Router>
