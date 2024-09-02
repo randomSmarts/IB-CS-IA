@@ -4,7 +4,7 @@ import Config
 # you can enable the server option below.
 config :backend, BackendWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "/kIsnELoRquC5wcbolAfzEFWdP3UoRYn+d2echy07+K5q2eFUmDLPDdy7HnmPVNV",
+  secret_key_base: "wk7JuyIzCEhHdWiYK3YFA+Hm7tqEpaJnD1zYBahR4zhTRGlckH0GgKKN1QFx9Giz",
   server: false
 
 # In test we don't send emails

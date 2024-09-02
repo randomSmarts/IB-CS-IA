@@ -13,7 +13,7 @@ config :backend, BackendWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "u3Yn+W74pK5SeAZN4E98IrrHpJaRpmp+ukodxFbgZTvhn/HO61FBY1GCd4eIPCtY",
+  secret_key_base: "Ufcg0CBOh9oOVhr04UG4SWHPygNXDFq+Vub4HQks7axk14JC1gphTsa5sELqyald",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:backend, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:backend, ~w(--watch)]}

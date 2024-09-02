@@ -19,7 +19,7 @@ config :backend, BackendWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Backend.PubSub,
-  live_view: [signing_salt: "yn0SRAip"]
+  live_view: [signing_salt: "hwovrxSe"]
 
 # Configures the mailer
 #
