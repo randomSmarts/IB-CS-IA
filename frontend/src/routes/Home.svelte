@@ -1,6 +1,7 @@
 <script>
-    // Any JavaScript logic for the landing page goes here
-    import { onMount } from 'svelte';
+    import {onMount} from 'svelte';
+    import 'frontend/src/styles/Home.css'; // Import the CSS file
+
     let showContent = false;
 
     onMount(() => {
@@ -10,65 +11,9 @@
     });
 </script>
 
-<style>
-    /* Basic reset and styling */
-    body {
-        margin: 0;
-        font-family: 'Arial', sans-serif;
-        background: linear-gradient(135deg, #000428, #004e92); /* Futuristic gradient background */
-        color: #fff;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        text-align: center;
-        padding: 0 20px;
-    }
-
-    h1 {
-        font-size: 4rem;
-        margin: 0;
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-
-    p {
-        font-size: 1.25rem;
-        margin-top: 1rem;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-    }
-
-    .visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .button {
-        background-color: #61dafb;
-        color: #000;
-        border: none;
-        padding: 10px 20px;
-        font-size: 1rem;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 2rem;
-        transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-        background-color: #4fa3d8;
-    }
-</style>
-
 <div class="container">
     <h1 class:visible={showContent}>Welcome to the Futuristic Attendance Tracker</h1>
-    <p class:visible={showContent}>Track attendance in a new, innovative way with real-time updates and seamless user experience.</p>
+    <p class:visible={showContent}>Track attendance in a new, innovative way with real-time updates and seamless user
+        experience.</p>
     <button class="button">Get Started</button>
 </div>
